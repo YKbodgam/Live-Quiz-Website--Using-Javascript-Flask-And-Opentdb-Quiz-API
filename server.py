@@ -3,7 +3,7 @@ import csv
 import os
 
 def write_to_csv(dict_data):
-    csv_file_path = 'C:/Users/Yahya/Desktop/Quiz/database.csv'
+    csv_file_path = 'Desktop/Quiz/database.csv' # path to the CSV file
     titles = ['firstname', 'lastname', 'phone', 'email', 'message']
 
     
