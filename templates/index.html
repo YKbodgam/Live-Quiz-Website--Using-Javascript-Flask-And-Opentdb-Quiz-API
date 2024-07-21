@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fun Quiz</title>
+    <link rel="stylesheet" href="../static/css/home.css" type="text/css" />
+</head>
+
+<body>
+    <header class="Navbar">
+        <div class="logo">
+            <span>Quizz</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="goHome()">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="home-content">
+            <h1>Quiz Website</h1>
+            <p>Take a fun quiz and test your knowledge!</p>
+            <button class="start-btn" onclick="StartQuiz()">Start Quiz</button>
+        </section>
+    </div>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="./static/Assets/Videos/4K_168.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <div class="popup-info">
+        <h2>Quiz Instructions</h2>
+        <span class="info">1. This quiz is about testing your knowledge of movies</span>
+        <span class="info">2. It contains 10 questions.</span><br>
+        <span class="info">3. Correct answers add one score.</span>
+        <span class="info">4. There is a time limit for each question.</span>
+        <span class="info">5. Total time taken will be shown at the end of the quiz.</span>
+        <span class="info">6. Press "Exit" if you don't want to play</span>
+        <span class="info">7. Press "Continue" to start the quiz.</span>
+
+        <div class="btn-group">
+            <button class="info-btn exit-btn" onclick="closeQuizPopup()">Exit</button>
+            <button class="info-btn continue-btn" onclick="ContinueQuiz()">Continue</button>
+        </div>
+    </div>
+
+    <div class="main-app">
+        <h1>Simple Quiz</h1>
+        <div id="timer" class="timer">00:00</div>
+        <div class="main-quiz">
+            <h2 id="Question">
+                Question Goes Here
+            </h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="Home-Btn" onclick="goHome()">Home</button>
+            <button id="previous-Btn" onclick="PreviousQuestBtnClick()">Previous</button>
+            <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+            <button id="Restart-btn" onclick="Restart()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="../static/js/home.js"></script>
+
+</body>
+
+</html>

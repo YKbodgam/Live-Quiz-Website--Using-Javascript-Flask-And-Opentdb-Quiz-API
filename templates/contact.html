@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../static/css/contact.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>Send us a Message</header>
+
+        <form method="post" action="submit_form" enctype="multipart/form-data">
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name="firstname" placeholder="Enter your First name" required />
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="field">
+                    <input type="text" name="lastname" placeholder="Enter your Last name" required />
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name="phone" placeholder="Enter your phone" required />
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="field">
+                    <input type="text" name="email" placeholder="Enter your email" required />
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+            <div class="message">
+                <textarea placeholder="Write your message" name="message" required></textarea>
+                <i class="material-icons">message</i>
+            </div>
+            <div class="button-area">
+                <button type="submit" value="submit" onclick="handleSubmit()">Send Message</button>
+                <button onclick="gohome()">Home</button>
+                <span></span>
+            </div>
+        </form>
+    </div>
+    <script src="../static/js/contact.js"></script>
+</body>
+
+</html>
