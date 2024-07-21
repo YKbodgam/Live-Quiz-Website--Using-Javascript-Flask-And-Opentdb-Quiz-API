@@ -46,10 +46,7 @@ def submit_form():
             return "There was some error. Please Try again"
     except Exception as e:
         print(e)
-
-
-# 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
-
+        
 
 if __name__ == "__main__":  # We can use this if we don't want to type the command
     # flask --app server.py run --debug
